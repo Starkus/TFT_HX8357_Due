@@ -1675,8 +1675,8 @@ plo_byte2(x1);
 
         y0 += ystep; xs=x0+1;
       }
+      if(dlen) drawFastVLine(y0, xs, dlen, color);
     }
-    if(dlen) drawFastVLine(y0, xs, dlen, color);
   }
   else
   {
@@ -1709,8 +1709,8 @@ plo_byte2(x1);
 
         y0 += ystep; xs=x0+1;
       }
+      if(dlen) drawFastHLine(xs, y0, dlen, color);
     }
-    if(dlen) drawFastHLine(xs, y0, dlen, color);
   }
   CS_H;
 }
